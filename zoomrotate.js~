@@ -12,3 +12,7 @@ function gestureend(event) {
 rotation = event.rotation+rotation;
 scale = event.scale*scale; }
 </script>
+</head>
+<body>
+<div ongesturechange="gesture(event)" ongestureend="gestureend(event)" style="background-color:silver; width: 100%; height: 300px">
+</div>
