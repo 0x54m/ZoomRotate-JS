@@ -1,0 +1,25 @@
+<!--
+Zoom and rotate gesture using JS.
+
+By Samet Kohen
+-->
+
+<!DOCTYPE html>
+<head>
+<meta charset=UTF-8" /> 
+<title>Gestures</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;
+maximum-scale=1.0; user-scalable=0;">
+<script type="text/javascript"> function gesture(event) {
+// Round values with two decimals
+event.target.innerHTML = "Rotation: " + Math.round(event.rotation*100)/100
++ " Scale: " + Math.round(event.scale*100)/100;
+// Apply the transform functions to the element event.target.style.webkitTransform = "rotate(" + event.rotation%360 + "deg)" +
+}
+</script>
+</head>
+<body>
+" scale(" + event.scale + ")";
+<div ongesturechange="gesture(event)" style="background-color:silver; width: 300px; height: 300px">
+</div>
+</body> </html>
