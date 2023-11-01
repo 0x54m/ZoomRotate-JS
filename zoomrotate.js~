@@ -1,4 +1,5 @@
 /* For Zoom-Rotate behavior. */
+
 <script type="text/javascript"> var rotation = 0;
 var scale = 1;
 function gesture(event) { event.target.innerHTML = "Rotation: " +
